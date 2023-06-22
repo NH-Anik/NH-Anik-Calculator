@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal_box">
+            <div class="cal_display">
+                <h2 class="display-in-h1">----:Calculator:----</h2>
+                <input type="text" id="display" maxlength="10" autofocus>
+            </div>
+            <div class="all-button">
+                <!-- 0-9 all button start -->
+                <div class="fast-four-button">
+                    <button class="btn" type="button" id="num7" value="7" onclick="c_num(7)">7</button>
+                    <button class="btn" type="button" id="num8" value="8" onclick="c_num(8)">8</button>
+                    <button class="btn" type="button" id="num9" value="9" onclick="c_num(9)">9</button>
+                    <button class="btn-oparetor" type="button" id="Add" value="+" onclick="c_num('+')">+</button>
+                </div>
+
+                <div class="sec-four-button">
+                    <button class="btn" type="button" id="num4" value="4"onclick="c_num(4)">4</button>
+                    <button class="btn" type="button" id="num5" value="5"onclick="c_num(5)">5</button>
+                    <button class="btn" type="button" id="num6" value="6"onclick="c_num(6)">6</button>
+                    <button class="btn-oparetor" type="button" id="Sub" value="-" onclick="c_num('-')">-</button>
+                </div>
+
+                <div class="three-four-button">
+                    <button class="btn" type="button" id="num1" value="1" onclick="c_num(1)">1</button>
+                    <button class="btn" type="button" id="num2" value="2" onclick="c_num(2)">2</button>
+                    <button class="btn" type="button" id="num3" value="3" onclick="c_num(3)">3</button>
+                    <button class="btn-oparetor" type="button" id="Mult" value="*" onclick="c_num('*')">*</button>
+                </div>
+                
+                <div class="four-four-button">
+                  <button class="btn" type="button" id="num0" value="." onclick="c_num('.')">.</button>
+                  <button class="btn" type="button" id="num0" value="0" onclick="c_num(0)">0</button>
+                  <button class="btn-oparetor" type="button" id="Perc" value="%" onclick="c_num('%')">%</button>
+                  <button class="btn-oparetor" type="button" id="Divi" value="/" onclick="c_num('/')">/</button>
+                </div>
+
+                <div class="five-four-button">
+                  <button class="btn" type="button" id="Equa" value="=" onclick="calculat()">=</button>
+                  <button class="btn-ac" type="reset" id="clear" value="AC"onclick="clearButon()">AC</button>
+                  <button class="btn-ac" type="reset" id="clear" value="AC"onclick="deletNumber()">DEL</button>
+                </div>
+                <!-- 0-9 all button end -->  
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/cal.js"></script>
+</body>
+</html>
